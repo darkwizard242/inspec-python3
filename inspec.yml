@@ -1,0 +1,10 @@
+name: python3
+title: Python Compliance 
+maintainer: Ali Muhammad
+copyright: Ali Muhammad
+copyright_email: am900820@gmail.com
+license: MIT
+summary: A Python3 Compliance Profile
+version: 0.1.0
+supports:
+  platform: os
