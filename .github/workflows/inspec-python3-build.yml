@@ -1,4 +1,4 @@
-name: inspec-git-build
+name: inspec-python3-build
 
 on:
   pull_request:
