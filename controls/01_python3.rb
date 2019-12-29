@@ -10,10 +10,6 @@ control "python3-01" do
   describe package("python3") do
     it { should be_installed }
   end
-  describe command('which python3') do
-    its('exit_status') { should eq 0 }
-    its('stdout') { should eq "/usr/bin/python3\n" }
-  end
 end
 
 control "python3-02" do
@@ -30,10 +26,9 @@ control "python3-03" do
   impact 0.7
   title "Check Python3 file."
   desc "Control to check for python3 executable file."
-
-  describe file('/usr/bin/python3') do
-    it { should exist }
-    its('type') { should eq :symlink }
-    it { should_not be_directory }
+#
+  describe command('which python3') do
+    its('exit_status') { should eq 0 }
+  # its('stdout') { should eq "/usr/bin/python3\n" }
   end
 end
