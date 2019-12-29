@@ -18,8 +18,7 @@ jobs:
     - uses: actions/checkout@v1
     - name: Install InSpec
       run: |
-        wget https://packages.chef.io/files/stable/inspec/4.18.39/ubuntu/18.04/inspec_4.18.39-1_amd64.deb
-        sudo dpkg -i inspec_4.18.39-1_amd64.deb
+        curl -fsSL https://raw.githubusercontent.com/darkwizard242/devopsubuntu1804/v1.0/packer-build/mods/26-inspec.sh | sudo bash -s -- install
     - name: Running Python3 Inspec Profile
       run: |
         inspec exec . --chef-license accept --no-color
