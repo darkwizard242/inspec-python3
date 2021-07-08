@@ -1,8 +1,8 @@
 name: python3
-title: Python Compliance 
+title: Python Compliance
 maintainer: Ali Muhammad
 copyright: Ali Muhammad
-copyright_email: am900820@gmail.com
+copyright_email: ali@alimuhammad.dev
 license: MIT
 summary: A Python3 Compliance Profile
 version: 0.1.0
